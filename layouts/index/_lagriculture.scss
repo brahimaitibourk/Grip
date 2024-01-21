@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo__lagriculture {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 17px 13px 28px 8px;
+    justify-content: center;
+}
+
+.nav__lagriculture ul {
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    gap: 54px;
+
+    .swiperr {
+        width: 100%;
+        height: 100%;
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            color: var(--darken-gray-black);
+            font-family: var(--font_familly-font);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: 1.4;
+            @include text__align__decoration__transform();
+
+            &:hover {
+                color: var(--lighten-black-color);
+            }
+        }
+
+        .active a:active {
+            color: var(--darken-gray-black);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.border__menu__lagriculture {
+    box-sizing: border-box;
+    height: 2px;
+    width: 1460px;
+    border: 1px solid var(--secondary-color);
+    opacity: 0.39;
+    z-index: 2;
+    position: absolute;
+    top: 82px;
+}
+
+.header__icons__lagriculture {
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+}
+
+.serch__icon__lagriculture {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+    cursor: pointer;
+
+    &:hover {
+        @include serch__icon__user();
+        background-color: var(--ver--color--shadow);
+        padding: 12px;
+
+    }
+}
+
+.user__icon__lagriculture {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17px;
+    cursor: pointer;
+
+    &:hover {
+        @include serch__icon__user();
+        background-color: var(--ver--color--shadow);
+        padding: 12px;
+    }
+}
+
+.container__maps__svg__lagriculture {
+    height: 562px;
+    left: 675px;
+    bottom: 290px;
+    position: relative;
+    width: 712px;
+    display: flex;
+}
+
+.swiper-slidee img {
+    background: linear-gradient(180deg, var(--ver--color--shadow), var(--darken-gray-black));
+    height: 563px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: var(--lighten-secondary-color);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    border: none;
+    position: relative;
+    left: 43px;
+    top: 19px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--lighten-black-color);
+    }
+}
+
+.select-items {
+    position: absolute;
+    display: none;
+    top: 50px;
+
+    &:hover {
+        display: block;
+    }
+}
+
+.select-selected__lagriculture {
+    color: var(--secondary-color);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover+.select-items {
+        display: block;
+    }
+}
+
+.select-selected__lagriculture img {
+    position: relative;
+    top: -9px;
+    width: 27px;
+    height: 17px;
+}
+
+.swiper__image__boder__lagriculture {
+    height: 8px;
+    width: 42px;
+    border-radius: 40px;
+    background-color: var(--lighten-black-color);
+    position: relative;
+    left: 129px;
+    bottom: 24rem;
+    padding: 2px;
+    left: 129px;
+
+    & h2 {
+        @include swiper__image__boder__h2__h3();
+        width: 495px;
+        font-size: 3.0rem;
+        letter-spacing: 0;
+        line-height: 1;
+    }
+
+    & h3 {
+        @include swiper__image__boder__h2__h3();
+        width: 473px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1;
+        text-transform: capitalize;
+
+        & span {
+            color: var(--lighten-black-color);
+        }
+    }
+}
+
+.swiper__maps__boder__lagriculture {
+    height: 453px;
+    left: 683px;
+    bottom: 577px;
+    position: relative;
+    width: 713px;
+
+    display: flex;
+}
+
+.map svg {
+    fill: var(--couverture-bg-color);
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__group__images__titer--text_lagriculture {
+    @include flexBoxx();
+    gap: 47px;
+    position: relative;
+    height: 163px;
+    top: 6rem;
+    background-color: var(--couvertur-bg-color);
+}
+
+.main__image__lagriculture {
+    @include flexBoxx();
+    gap: 5px;
+}
+
+/*slider*/
+.contanier__main {
+    max-width: 1200px;
+    margin: auto;
+    width: 82%;
+    margin-right: 25px;
+    position: relative;
+    top: 225px;
+}
+
+.slider-wrapper {
+    position: relative;
+
+}
+
+.slider-wrapper .image-list {
+    display: flex;
+    position: relative;
+    font-size: 0;
+    @include scrollbar-width--overflow-x();
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.slider-wrapper .image-list img {
+    height: 424px;
+    width: 300px;
+    object-fit: cover;
+
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list.image-item {
+    object-fit: cover;
+    width: 325px;
+    height: 400px;
+}
+
+.slider-button {
+    position: absolute;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color--black--rgba);
+    background-color: var(--wiate-gray-shadow);
+    box-shadow: 0 5px 10px 0 var(--darken-gray-shadow);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev-slide {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+}
+
+.slider-button#prev-slide {
+    left: -20px;
+    display: none;
+    z-index: 999;
+}
+
+.slider-button#next-slide {
+    right: -20px;
+    position: absolute;
+    z-index: 999;
+}
+
+.background {
+    background-color: #00000036;
+    width: 298px;
+    position: absolute;
+    z-index: 9;
+    height: 184px;
+    bottom: 1px;
+}
+
+.contanier__background--titer:hover {
+    height: 33px;
+    width: 250px;
+    color: #F1CF69;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    z-index: 9;
+}
+
+.contanier__background--text {
+    height: 224px;
+    width: 250px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.contanier__lien__photo {
+    height: 8px;
+    width: 42px;
+    border-radius: 40px;
+    background-color: #F1CF69;
+    position: absolute;
+    bottom: 153px;
+    z-index: 9;
+    margin-left: 29px;
+
+    .contanier__titel__image {
+        color: #FFFFFF;
+        font-family: "Open Sans";
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 0;
+        position: absolute;
+        height: 33px;
+        width: 250px;
+        top: 35px;
+    }
+
+    .contanier__text__image {
+        height: 48px;
+        width: 250px;
+        color: #ffffffe0;
+        font-family: Roboto;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 14px;
+        position: absolute;
+        top: 65px;
+    }
+
+}
+
+/**/
+
+.image-list {
+    overflow: hidden;
+}
+
+.image__list1 {
+
+    position: relative;
+    display: block;
+
+
+}
+
+.image__list1 img {
+    width: 299px;
+    height: 424px;
+}
+
+.image__list1 .infos-hover {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+    width: 299px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #4A8B71;
+    z-index: 99;
+}
+
+.image__list1 .infos-hover i {
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.image__list1 .infos-hover p {
+    text-align: center;
+}
+
+.image__list1:hover .infos-hover {
+    height: 100%;
+}
+
+.ontanier__background--titer {
+    color: #F1CF69;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding: 45px 233px 54px 33px;
+    white-space: nowrap;
+}
+
+.ontanier__background--text {
+    height: 224px;
+    width: 250px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: relative;
+    left: 33px;
+    text-align: justify;
+}
+
+.ontanier__background--button {
+    box-sizing: border-box;
+    height: 54px;
+    width: 236px;
+    border: 1.8px solid #F1CF69;
+    border-radius: 90px;
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F1CF69;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 90px;
+    }
+}
+
+.ontanier__background--button h2 {
+    color: #F1CF69;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 12px 12px 12px 12px;
+
+    &:hover {
+        color: #fff;
+    }
+}

@@ -1,0 +1,21 @@
+@import './variables/fonts';
+@import './variables/colors';
+/*Importing variables */
+
+/* Importing mixins and utility classes */
+@import'./utils/mixin';
+
+
+
+/* Importing layouts */
+@import'./layouts/index/index';
+@import'./layouts/index/fertilisation_raisonnee';
+@import './layouts/index/lagriculture';
+@import './layouts/index/contacte';
+
+/* Importing components */
+@import 'components/section-swiper';
+@import 'components/header-slider';
+@import 'components/maps';
+@import 'components/lagriculture_maps';
+@import 'components/infourmation--tabs';

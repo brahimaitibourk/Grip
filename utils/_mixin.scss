@@ -1,0 +1,339 @@
+/* Header Navigation Styles */
+
+/* Flexbox Mixins */
+@mixin fleexBox() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexBoxx() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fleBox() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Styling Mixins */
+@mixin font-weight_letter-spacing_line-height() {
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+/* Scrollbar and Overflow Mixins */
+@mixin scrollbar-width--overflow-x() {
+    scrollbar-width: none;
+    overflow-x: auto;
+}
+
+/* Search Icon and User Styles Mixin */
+@mixin serch__icon__user() {
+    background-color: var(--lighten-black-color);
+    border-radius: 50px;
+    padding: 6px auto;
+    transition: 0.3s;
+}
+
+/* Circle Style Mixin */
+@mixin section__style--sercle() {
+    box-sizing: border-box;
+    height: 9px;
+    width: 9px;
+    border: 1px solid var(--checkout__border-color);
+    position: relative;
+    left: 299px;
+    border-radius: 50%;
+    bottom: 533px;
+}
+
+/* Tab Checked Styles Mixin */
+@mixin tab__checked__nth-of-type () {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+/* Last Tab Styles Mixin */
+@mixin tab--last-of-type--not() {
+    border-radius: 0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+}
+
+/* Section Link Styles Mixin */
+@mixin section__lien() {
+    height: 8px;
+    width: 24px;
+    border-radius: 40px;
+    background-color: var(--primary-color);
+}
+
+/* Number Fertilisation Styles Mixin */
+@mixin section__number__Fertilisation() {
+    height: 31px;
+    width: 67px;
+    color: var(--primary-color);
+    font-family: var(--font_familly-font);
+    font-size: 3.8125rem;
+    font-weight: 300;
+    letter-spacing: -1.42px;
+    line-height: 0;
+    text-align: justify;
+}
+
+/* Title Fertilisation Styles Mixin */
+@mixin section__titer__Fertilisatio() {
+    height: 32px;
+    width: 310px;
+    color: var(--blue-color-shadow);
+    font-family: var(--font_familly-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1;
+    position: relative;
+    bottom: 77px;
+    left: 78px;
+    margin-right: 81px;
+}
+
+/* Information Map SVG Styles Mixin */
+@mixin infourmation_map_svg() {
+    height: 22px;
+    width: 150px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+/* Zone Stats Styles Mixin */
+@mixin zone-stats() {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 17px;
+    border-radius: 12px;
+    margin: 3px;
+}
+
+@mixin zone-stats2() {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 17px;
+    border-radius: 12px;
+    padding: 0 8px 0 1px;
+    width: 83%;
+}
+
+/* Production Styles Mixin */
+@mixin production() {
+    height: 22px;
+    width: 150px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+/* Paragraph Fertilisation Styles Mixin */
+@mixin section__paraghraf__Fertilisation() {
+    color: var(--couverture-color);
+    font-family: var(--font_familly-font);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 2;
+    text-align: justify;
+    position: relative;
+    bottom: 86px;
+    margin-top: 58px;
+    left: 155px;
+}
+
+/* Video Title Styles Mixin */
+@mixin video__titer() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-family: var(--font_familly-primary);
+    letter-spacing: 0;
+}
+
+/*Tabs page fertilisation (Arrow)*/
+
+/* Arrow Styles Mixin */
+@mixin arrow() {
+    width: 17px;
+    height: 17px;
+    display: grid;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4A8B71;
+    border: 1px solid white;
+    cursor: pointer;
+    top: 43px;
+}
+
+/* Arrow Before and After Styles Mixin */
+@mixin arrow--before--after() {
+    content: "";
+    grid-area: 1;
+    background: white;
+    clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
+    animation: a5 1s infinite;
+    transform: translate(calc(0% + var(--s, 0%)));
+}
+
+/* Swiper Image Border H2 H3 Styles Mixin */
+@mixin swiper__image__boder__h2__h3() {
+    color: #FFFFFF;
+    font-family: var(--font_familly-font);
+    margin-top: 22px;
+}
+
+/* Text Alignment and Decoration Transform Styles Mixin */
+@mixin text__align__decoration__transform() {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Box Sizing and Text Transform Styles Mixin */
+@mixin box-sizing__text-transform() {
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+/* Container Selection Styles Mixin */
+@mixin container--selection () {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Container Selection Paragraph Styles Mixin */
+@mixin container--selection__p() {
+    color: var(--secondary-color);
+    font-family: var(--font_familly-font);
+    font-size: 1.5rem;
+    margin-top: 12px;
+    letter-spacing: 0;
+    line-height: 1;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+
+
+/* Images Tabs Styles Mixin */
+@mixin images__tabs() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+/* Content Item Styles Mixin */
+@mixin content--item() {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Touts Images Tabs Styles Mixin */
+@mixin touts__images__tabs() {
+    object-fit: cover;
+    height: 313px;
+    width: 291px;
+    position: relative;
+    z-index: -1;
+
+}
+
+/* Image Tab Styles Mixin */
+@mixin image--tab() {
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+/* Almoutmir Logo Styles Mixin */
+@mixin almoutmir-logo() {
+    color: var(--secondary-color);
+    font-family: var(--font_familly-font);
+    letter-spacing: 0;
+    text-align: center;
+    position: absolute;
+}
+
+/*swiper mySwiper slider header*/
+@mixin swiper-slide__flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Swiper Button Next Prev Styles Mixin */
+@mixin swiper-button-next__prev() {
+    content: 'next';
+    display: none;
+}
+
+/* Swiper Button Next Prev Hover Styles Mixin */
+@mixin swiper-button-next__prev__hove() {
+    height: 62px;
+    width: 62px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+/* Button Left Before Styles Mixin */
+@mixin button__button__left__before() {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    transition: all 0.3s ease;
+}
+
+/* Button After Styles Mixin */
+@mixin button__after() {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 14px;
+    border-color: transparent transparent transparent #fffcfc;
+    position: absolute;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+}
